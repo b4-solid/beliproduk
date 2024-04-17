@@ -1,5 +1,5 @@
 FROM openjdk:21-oracle
-RUN "./gradlew build"
+COPY build/libs/*.jar app.jar
 
 EXPOSE 8080
 
