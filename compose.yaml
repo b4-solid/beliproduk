@@ -1,0 +1,7 @@
+services:
+  beli-produk:
+    build: .
+    container_name: beliproduk
+    ports:
+      - 8080:8080
+    restart: always
