@@ -4,4 +4,3 @@ services:
     container_name: beliproduk
     ports:
       - 8080:8080
-    restart: always
