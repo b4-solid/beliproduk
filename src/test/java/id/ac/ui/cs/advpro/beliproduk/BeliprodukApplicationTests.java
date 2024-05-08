@@ -7,7 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 class BeliprodukApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void testMain() {
+		BeliprodukApplication.main(new String[] {});
 	}
 
 }
