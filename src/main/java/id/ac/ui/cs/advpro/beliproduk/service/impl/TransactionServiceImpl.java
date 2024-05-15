@@ -41,6 +41,7 @@ public class TransactionServiceImpl implements TransactionService{
     };
 
     //D(elete)
+    @Override
     public void deleteTransaction(Long id) {
         repository.deleteById(id);
     };
