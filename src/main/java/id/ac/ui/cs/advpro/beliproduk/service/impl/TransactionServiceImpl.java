@@ -9,7 +9,7 @@ import id.ac.ui.cs.advpro.beliproduk.repository.TransactionRepository;
 import id.ac.ui.cs.advpro.beliproduk.service.TransactionService;
 
 @Service
-public class TransactionServiceImpl implements TransactionService{
+public class TransactionServiceImpl implements TransactionService {
 
     private final TransactionRepository repository;
 
@@ -32,6 +32,11 @@ public class TransactionServiceImpl implements TransactionService{
     @Override
     public Optional<TransactionModel> findById(Long id) {
         return repository.findById(id);
+    };
+
+    @Override
+    public List<TransactionModel> findByUsername(String username) {
+        return repository.findByUsername(username);
     };
 
     //U(pdate)

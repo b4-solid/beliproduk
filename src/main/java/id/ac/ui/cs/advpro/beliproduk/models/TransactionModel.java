@@ -21,7 +21,7 @@ public class TransactionModel {
     @Column(name = "voucher_id")
     @Setter
     @Getter
-    private long voucherId;
+    private Long voucherId;
 
     @Column(name = "transaction_date")
     @NotNull
@@ -35,13 +35,25 @@ public class TransactionModel {
     @Getter
     private long totalAmount;
 
+    @Column(name = "status")
+    @Setter
+    @Getter
+    private String status;
+
+    @Column(name = "username")
+    @NotNull
+    @Setter
+    @Getter
+    private String username;
+
     public TransactionModel() {
     }
 
-    public TransactionModel(long id, long voucherId, Date transactionDate, long totalAmount) {
+    public TransactionModel(long id, String username, long voucherId, Date transactionDate, long totalAmount) {
         this.id = id;
         this.voucherId = voucherId;
         this.transactionDate = transactionDate;
         this.totalAmount = totalAmount;
+        this.username = username;
     }
 }

@@ -12,6 +12,7 @@ public interface TransactionService {
 
     //R(ead)
     List<TransactionModel> findAllTransaction();
+    List<TransactionModel> findByUsername(String username);
     Optional<TransactionModel> findById(Long id);
 
     //U(pdate)
