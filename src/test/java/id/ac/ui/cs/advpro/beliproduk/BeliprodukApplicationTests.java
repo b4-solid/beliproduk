@@ -8,6 +8,7 @@ class BeliprodukApplicationTests {
 
 	@Test
 	void contextLoads() {
+		BeliprodukApplication.main(new String[] {});
 	}
 
 }

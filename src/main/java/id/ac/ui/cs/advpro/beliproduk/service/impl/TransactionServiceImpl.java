@@ -44,10 +44,4 @@ public class TransactionServiceImpl implements TransactionService {
     public TransactionModel updateTransaction(TransactionModel transaction) {
         return repository.save(transaction);
     };
-
-    //D(elete)
-    @Override
-    public void deleteTransaction(Long id) {
-        repository.deleteById(id);
-    };
 }

@@ -17,7 +17,4 @@ public interface TransactionService {
 
     //U(pdate)
     TransactionModel updateTransaction(TransactionModel transaction);
-
-    //D(elete)
-    void deleteTransaction(Long id);
 }
